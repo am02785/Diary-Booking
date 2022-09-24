@@ -22,7 +22,7 @@ namespace DiaryBooking
 
         public void addBooking(string name, DateTime startTime, DateTime endTime)
         {
-            Booking booking = new Booking(name, startTime, endTime);
+            Booking booking = new Booking(this, name, startTime, endTime);
             this.bookings.Add(booking);
         }
 
