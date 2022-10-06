@@ -69,3 +69,4 @@ C:\Users\armat\Documents\Ali\DiaryBooking\WindowsFormsApp1\obj\Debug\WindowsForm
 C:\Users\armat\Documents\Ali\DiaryBooking\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 C:\Users\armat\Documents\Ali\DiaryBooking\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\armat\Documents\Ali\DiaryBooking\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\armat\Documents\Ali\DiaryBooking\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AddUser.resources

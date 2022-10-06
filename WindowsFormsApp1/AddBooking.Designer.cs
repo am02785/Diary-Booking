@@ -32,6 +32,8 @@ namespace WindowsFormsApp1
         private void InitializeComponent()
         {
             this.bookingForm = new System.Windows.Forms.GroupBox();
+            this.addUserButton = new System.Windows.Forms.Button();
+            this.bookingBackButton = new System.Windows.Forms.Button();
             this.addBookingButton = new System.Windows.Forms.Button();
             this.endTimePicker = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
@@ -39,12 +41,12 @@ namespace WindowsFormsApp1
             this.label2 = new System.Windows.Forms.Label();
             this.bookingName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.bookingBackButton = new System.Windows.Forms.Button();
             this.bookingForm.SuspendLayout();
             this.SuspendLayout();
             // 
             // bookingForm
             // 
+            this.bookingForm.Controls.Add(this.addUserButton);
             this.bookingForm.Controls.Add(this.bookingBackButton);
             this.bookingForm.Controls.Add(this.addBookingButton);
             this.bookingForm.Controls.Add(this.endTimePicker);
@@ -59,6 +61,26 @@ namespace WindowsFormsApp1
             this.bookingForm.TabIndex = 0;
             this.bookingForm.TabStop = false;
             this.bookingForm.Text = "addBooking";
+            // 
+            // addUserButton
+            // 
+            this.addUserButton.Location = new System.Drawing.Point(400, 271);
+            this.addUserButton.Name = "addUserButton";
+            this.addUserButton.Size = new System.Drawing.Size(128, 42);
+            this.addUserButton.TabIndex = 8;
+            this.addUserButton.Text = "add user";
+            this.addUserButton.UseVisualStyleBackColor = true;
+            this.addUserButton.Click += new System.EventHandler(this.addUserButton_Click);
+            // 
+            // bookingBackButton
+            // 
+            this.bookingBackButton.Location = new System.Drawing.Point(210, 267);
+            this.bookingBackButton.Name = "bookingBackButton";
+            this.bookingBackButton.Size = new System.Drawing.Size(127, 46);
+            this.bookingBackButton.TabIndex = 7;
+            this.bookingBackButton.Text = "back";
+            this.bookingBackButton.UseVisualStyleBackColor = true;
+            this.bookingBackButton.Click += new System.EventHandler(this.bookingBackButton_Click);
             // 
             // addBookingButton
             // 
@@ -115,16 +137,6 @@ namespace WindowsFormsApp1
             this.label1.TabIndex = 0;
             this.label1.Text = "name";
             // 
-            // bookingBackButton
-            // 
-            this.bookingBackButton.Location = new System.Drawing.Point(210, 267);
-            this.bookingBackButton.Name = "bookingBackButton";
-            this.bookingBackButton.Size = new System.Drawing.Size(127, 46);
-            this.bookingBackButton.TabIndex = 7;
-            this.bookingBackButton.Text = "back";
-            this.bookingBackButton.UseVisualStyleBackColor = true;
-            this.bookingBackButton.Click += new System.EventHandler(this.bookingBackButton_Click);
-            // 
             // AddBooking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -137,6 +149,8 @@ namespace WindowsFormsApp1
             this.bookingForm.PerformLayout();
             this.ResumeLayout(false);
         }
+
+        private System.Windows.Forms.Button addUserButton;
 
         private System.Windows.Forms.Button bookingBackButton;
 

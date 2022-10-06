@@ -13,11 +13,13 @@ namespace WindowsFormsApp1
     public partial class Form1 : Form
     {
         private string gender;
+        private Dictionary<string, UserForm> userForms;
         private Home home;
         private Login login;
         
-        public Form1(Home home, Login login)
+        public Form1(Dictionary<string, UserForm> userForms, Home home, Login login)
         {
+            this.userForms = userForms;
             this.home = home;
             this.login = login;
             InitializeComponent();
@@ -30,7 +32,7 @@ namespace WindowsFormsApp1
             string age = txtAge.Text;
             string email = txtEmail.Text;
             this.Hide();
-            var userForm = new UserForm(forename, surname, age, email, this.gender, this.home);
+            var userForm = new UserForm(this.userForms, forename, surname, age, email, this.gender, this.home);
             this.login.addUserForm(email, userForm);
             userForm.Show();
         }

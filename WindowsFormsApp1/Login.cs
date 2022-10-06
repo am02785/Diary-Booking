@@ -10,10 +10,10 @@ namespace WindowsFormsApp1
         private Dictionary<string, UserForm> userForms;
         private Home home;
         
-        public Login(Home home)
+        public Login(Dictionary<string, UserForm> userForms, Home home)
         {
             this.home = home;
-            this.userForms = new Dictionary<string, UserForm>();
+            this.userForms = userForms;
             InitializeComponent();
         }
 

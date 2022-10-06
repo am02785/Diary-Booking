@@ -11,13 +11,15 @@ namespace WindowsFormsApp1
         private string name;
         private DateTime startTime;
         private DateTime endTime;
+        private List<UserForm> userForms;
 
-        public Booking(User user, string name, DateTime startTime, DateTime endTime)
+        public Booking(User user, string name, DateTime startTime, DateTime endTime, List<UserForm> userForms)
         {
             this.user = user;
             this.name = name;
             this.startTime = startTime;
             this.endTime = endTime;
+            this.userForms = userForms;
         }
 
         public string getName()
@@ -33,6 +35,11 @@ namespace WindowsFormsApp1
         public string getEndTime()
         {
             return this.endTime.ToString();
+        }
+
+        public List<UserForm> getUserForms()
+        {
+            return this.userForms;
         }
 
     }
